@@ -1,0 +1,29 @@
+<ion-view view-title="Home">
+    <ion-content>
+        <div class="home_video">
+            <video style="display: none" autoplay id="video"></video>
+            <canvas style="display: none" id="canvas"></canvas>
+            <button id="startstop" style="outline-width: 0; background-color: transparent; border: none"><img id="startstopicon" src=""/></button>
+            <div ng-init="videoStream()"></div>
+        </div>
+        <div class="home_tableCommands">
+            <table>
+                <tr>
+                    <td></td>
+                    <td><button ng-click="forward()">Avanti</button></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><button ng-click="left()">Sinistra</button></td>
+                    <td></td>
+                    <td><button ng-click="right()">Destra</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button ng-click="backward()">Indietro</button></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </ion-content>
+</ion-view>

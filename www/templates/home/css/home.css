@@ -1,0 +1,14 @@
+.home_tableCommands {
+    float: right;
+    height: 100%;
+    width: 30%;
+}
+
+.home_tableCommands table, .home_tableCommands table tr td button {
+    height: 100%;
+}
+
+.home_video {
+    width: 70%;
+    float: left;
+}
